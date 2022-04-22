@@ -1,0 +1,99 @@
+/* Navbar and Banner */
+
+#banner {
+    background-color: rgb(34,29,23);
+}
+
+#navbar {
+    background-color: rgb(255, 223, 109);
+    text-align: right;
+}
+
+#navbar a {
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    color: rgb(34,29,23);
+}
+
+#navbar a:visited {
+    color: inherit;
+}
+
+#navbar a.currentpage {
+    background-color: rgb(34,29,23);
+    color: white;
+}
+
+#navbar a:hover {
+    background-color: rgb(34,29,23);
+    color: white;
+}
+
+#logo {
+    width: 130px;
+    height: auto;
+    margin: 40px;
+}
+
+/* Footer */
+
+#footer {
+    background-color: rgb(34,29,23);
+    color: white;
+}
+
+#copyright {
+    font-style: italic;
+}
+
+/* General Styling */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24pt;
+    margin-top: 40px;
+    padding: 5px 10px 0px 10px;
+    display: inline-block;
+    border: 3px solid rgb(34,29,23);
+}
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20pt;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding: 5px 10px 0px 10px;
+    display: inline-block;
+    border: 3px solid rgb(34,29,23);
+}
+
+p {
+    line-height: 1.5;
+}
+
+b {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    font-size: 14pt;
+}
+/* MAIN COLOURS FOR MENU*/
+#burger {
+    background-color: rgb(255, 223, 109);
+}
+#poutine {
+    background-color: white;
+}
+#Hotdogs {
+    background-color: white;
+}
+#Drinks {
+    background-color: rgb(255, 223, 109);
+}
+#Sides {
+    background-color: rgb(255, 223, 109);
+   background-size: cover auto;
+}

@@ -1,0 +1,174 @@
+/* Home Page Layout */
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: [start] 200px [quarter] 200px [half] 200px [three-quarters] 200px [end];
+    grid-template-rows: [heading] 100px [row1-start] 300px [row2-start] 300px [bottom];
+}
+
+.page-title {
+    grid-column-start: start;
+    grid-column-end: end;
+    grid-row-start: heading;
+    grid-row-end: row1-start;
+}
+
+#topleft {
+    grid-column-start: start;
+    grid-column-end: half;
+    grid-row-start: row1-start;
+    grid-row-end: row2-start;
+    padding-top: 25px;
+}
+
+#topright {
+    grid-column-start: half;
+    grid-column-end: end;
+    grid-row-start: row1-start;
+    grid-row-end: row2-start;
+    padding: 60px 20px 0 20px;
+    text-align: right;
+}
+
+#bottomleft {
+    grid-column-start: start;
+    grid-column-end: half;
+    grid-row-start: row2-start;
+    grid-row-end: bottom;
+    padding-top: 35px;
+    padding-right: 45px;
+}
+
+#bottomright {
+    grid-column-start: half;
+    grid-column-end: end;
+    grid-row-start: row2-start;
+    grid-row-end: bottom;
+    padding-left: 30px;
+}
+
+/* ************MAIN LAYOUT FOR CONTACT ***********/
+
+
+#contactinfo {
+    float: left;
+    width: 50%;
+    margin-bottom: 45px;
+}
+
+#contactimage {
+    text-align: center;
+    float: right;
+    width: 50%;
+    padding-top: 115px;
+}
+
+/* ************MAIN LAYOUT FOR MENU *************/
+
+#poutine {
+    text-align: left;
+    float: left;
+    width: 50%;
+}
+
+#burger {
+    width: 50%;
+    float: right;
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 35px;
+}
+
+#Hotdogs {
+    float: left;
+    text-align: left;
+    width: 50%;
+    margin-bottom: 50px;
+    clear: left;
+}
+
+#Drinks {
+    float: right;
+    width: 50%;
+    padding-top: -20px;
+}
+
+#Sides {
+    float: right;
+    width: 50%;
+    padding-bottom: 65px;
+}
+
+#poutine li {
+    margin-right: 15px;
+}
+
+#burger li {
+    margin-left: 15px;
+    padding-right: 15px;
+}
+
+#burger h2 {
+    margin-left: 15px;
+}
+
+#Hotdogs li {
+    margin-right: 15px;
+}
+
+#Drinks h2 {
+    margin-left: 15px;
+}
+
+#Sides h2 {
+    margin-left: 15px;
+}
+
+#Drinks li {
+    margin-left: 15px;
+    padding-right: 15px;
+}
+
+#Sides li {
+    margin-left: 15px;
+    padding-right: 15px;
+}
+
+/* Footer Layout */
+
+#footer {
+    height: 400px;
+    overflow: auto;
+    clear: both;
+}
+
+#footer_address {
+    float: left;
+    padding: 97px 0 0 100px
+}
+
+.mapouter {
+    float: right;
+    padding: 73px 20px 0 0;
+}
+
+/* Copyright styling and general page layout/boundaries */
+
+h1 {
+    margin: 40px 0 40px 0
+}
+
+#content {
+    margin-bottom: 40px;
+}
+
+#copyright {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+#banner, #navbar, #footer, #content {
+    --contentWidth: 800px;
+    padding: 0px calc((100% - var(--contentWidth)) / 2);
+}
